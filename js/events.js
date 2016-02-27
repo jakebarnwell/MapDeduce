@@ -1,0 +1,4 @@
+
+$(".resource").click(function(e) {
+	
+});

@@ -49,6 +49,7 @@ function createResourceElem(resource) {
     var filename = icon_data[resource].filename;
 
     img.attr('src',  'resources/icons/svg/' + filename);
+    img.attr('data-toggle', 'modal');
     div.addClass('resource');
     img.addClass(resource);
     div.append(img);
