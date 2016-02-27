@@ -144,5 +144,5 @@ function loadMapEvent(event) {
     var bldg_flr = inputToBuilding(map_id);
     var building = bldg_flr[0];
     var floor = bldg_flr[1];
-    loadMapTranstion(building, floor);
+    loadMapTransition(building, floor);
 }
