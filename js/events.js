@@ -42,12 +42,13 @@ function add_resource_handlers() {
         	notes = "No available notes.";
         }
 
+        console.log(notes);
+
         var key = bldg+'|'+floor+'|'+type+'|'+id;
         var neighbors = map_adjacency[key];
         if (neighbors && neighbors.length > 0) {
             var notes = notes + '<br>Goes to:<br>';
             $("#icon-notes-body").html(notes);
-
             for (var i in neighbors) {
                 var n = neighbors[i];
                 var components = n.split('|');
@@ -55,8 +56,10 @@ function add_resource_handlers() {
                 // notes = notes + a.html();
                 $("#icon-notes-body").append(a);
             }
+        } else {
+            $("#icon-notes-body").html(notes);
         }
 
-        $("#icon-notes").modal({backdrop: false});
+        $("#icon-notes").modal({backdrop: true});
     });
 }
