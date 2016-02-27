@@ -8,17 +8,24 @@
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-        <script src="js/img-touch-canvas.js"></script>
+        <script src="js/img-touch-canvas-mod.js"></script>
 
 	</head>
 
 	<body>
         <h1>Testing Zoom and Pan here:</h1>
         <div> <!-- set desired position and size to that div -->
-            <canvas id="mycanvas" style="width: 80%; height: "></canvas>
+            <canvas id="mycanvas" style="width: 80%; height: 200px;"></canvas>
         </div>
-
         <script>
+            // var canvas = document.getElementById("mycanvas");
+            // var context = canvas.getContext('2d');
+            // var imageObj = new Image();
+            // imageObj.onload = function () {
+            //     context.drawImage(imageObj,0,0,imageObj.width,imageObj.height,0,0,canvas.width,canvas.height);
+            // };
+            // imageObj.src = document.getElementById("tempImg").src;
+
             var gesturableImg = new ImgTouchCanvas({
                 canvas: document.getElementById('mycanvas'),
                 path: "resources/img/10_1.svg",
