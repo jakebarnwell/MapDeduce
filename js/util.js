@@ -106,6 +106,7 @@ function loadMapTranstion(building, floor) {
     hideMap(function () {
         loadMap(building, floor);
         showMap();
+        $('#map').click(displayPosition); // remove after dev
     });
 }
 
@@ -116,6 +117,4 @@ function loadMapEvent(event) {
     var floor = bldg_flr[1];
 
     loadMapTranstion(building, floor);
-
-    $('#map').click(displayPosition);
 }
