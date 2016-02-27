@@ -10,6 +10,22 @@ function get_amenity_object(bldg, floor, type, id) {
 	return null;
 }
 
+function onPortalClick() {
+    var a = $(this);
+    loadMapTransition(a.data('building'), a.data('floor'));
+    $('.close').click();
+}
+
+function makeLink(building, floor) {
+    var a = $('<a>');
+    a.data('building', building);
+    a.data('floor', floor);
+    a.text('Floor ' + floor + ' of Building ' + building);
+    a.click(onPortalClick);
+
+    return a;
+}
+
 function add_resource_handlers() {
     $(".resource-img").click(function(e) {
     	var target = $(e.target);
@@ -25,7 +41,22 @@ function add_resource_handlers() {
         if(notes === "" || notes === null) {
         	notes = "No available notes.";
         }
-        $("#icon-notes-body").html(notes);
+
+        var key = bldg+'|'+floor+'|'+type+'|'+id;
+        var neighbors = map_adjacency[key];
+        if (neighbors && neighbors.length > 0) {
+            var notes = notes + '<br>Goes to:<br>';
+            $("#icon-notes-body").html(notes);
+
+            for (var i in neighbors) {
+                var n = neighbors[i];
+                var components = n.split('|');
+                var a = makeLink(components[0], components[1]);
+                // notes = notes + a.html();
+                $("#icon-notes-body").append(a);
+            }
+        }
+
         $("#icon-notes").modal({backdrop: false});
     });
 }
