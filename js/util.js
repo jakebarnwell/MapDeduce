@@ -26,7 +26,7 @@ function displayPostion (event) {
 }
 
 function changeMap(building, floor) {
-    var src = 'resources/img/' +map_data[building][floor].filename + '.svg';
+    var src = 'resources/img/' + map_data[building][floor].filename + '.svg';
     $('#map').attr('src', src);
 }
 
@@ -43,11 +43,14 @@ function createIconElem(resource, info) {
     var div = $('<div>');
     var img = $('<img>');
     var filename = icon_data[resource].filename;
-    var color = icon_data[resource].color;
 
+    img.attr('src',  'resources/icons/svg/' + filename);
     div.addClass('resource');
-    // div.css('background-color', color);
-    // img.attr('src',  'resources/icons/svg/' + filename);
+    div.addClass(resource);
+    div.css('position', 'absolute');
+    div.append(img);
+
+    return div;
 }
 
 function loadMap(building, floor) {
@@ -58,7 +61,21 @@ function loadMap(building, floor) {
     changeMap(building, floor);
 
     for (var resource in resources) {
-        var info = resources[resources];
-        var elem = createIconElem(resource);
+        var resource_list = resources[resource];
+
+        for (var resource_obj in resource_list) {
+            var elem = createIconElem(resource);
+            elem.css('left', resource_obj.x);
+            elem.css('top', resource_obj.y);
+        }
     }
+}
+
+function loadMapEvent(event) {
+    var map_id = $('#floor_input').val();
+    var bldg_flr = map_id.split('_');
+    var building = bldg_flr[0];
+    var floor = bldg_flr[1];
+
+    changeMap(building, floor);
 }

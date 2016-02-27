@@ -39,18 +39,18 @@ map_data = {
 };
 
 icon_data = {
-	wf: { filename: 'drink-2.svg', color: ''},
-	wcm: { filename: 'men-restroom-sign.svg', color: ''},
-	wcf: { filename: 'women-restroom-sign.svg', color: ''},
-	wcu: { filename: 'black.svg', color: ''},
-	wcma: { filename: 'men-restroom-sign.svg', color: ''},
-	wcfa: { filename: 'women-restroom-sign.svg', color: ''},
-	wcua: { filename: 'toilets-sign.svg', color: ''},
-	elev: { filename: 'up-arrow-2.svg', color: ''},
-	stairs: { filename: 'ascending-stairs-signal.svg', color: ''},
-	ramp: { filename: 'arrows-1.svg', color: ''},
-	lift: { filename: 'elevator-with-a-occupant.svg', color: ''},
-	rdoor: { filename: 'toilets-sign.svg', color: ''},
-	door: { filename: 'opened-door-aperture.svg', color: ''},
-	adoor: { filename: 'toilets-sign.svg', color: ''}
+	wf: { filename: 'drink-2.svg'},
+	wcm: { filename: 'men-restroom-sign.svg'},
+	wcf: { filename: 'women-restroom-sign.svg'},
+	wcu: { filename: 'black.svg'},
+	wcma: { filename: 'men-restroom-sign.svg'},
+	wcfa: { filename: 'women-restroom-sign.svg'},
+	wcua: { filename: 'toilets-sign.svg'},
+	elev: { filename: 'up-arrow-2.svg'},
+	stairs: { filename: 'ascending-stairs-signal.svg'},
+	ramp: { filename: 'arrows-1.svg'},
+	lift: { filename: 'elevator-with-a-occupant.svg'},
+	rdoor: { filename: 'toilets-sign.svg'},
+	door: { filename: 'opened-door-aperture.svg'},
+	adoor: { filename: 'toilets-sign.svg'}
 };

@@ -7,5 +7,5 @@
 
 $(function () {
     $('#map').click(displayPostion);
-    $('#change_button').click(changeMapEvent);
+    $('#change_button').click(loadMapEvent);
 });
