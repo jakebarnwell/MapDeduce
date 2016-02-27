@@ -20,7 +20,7 @@ resource = {
 
 map_data = {
 	7: {0: {filename: "", north: 0},
-		1: {filename: "", north: 0},
+		1: {filename: "7_1.svg", north: 0},
 		2: {filename: "", north: 0},
 		3: {filename: "", north: 0},
 		4: {filename: "", north: 0},
@@ -29,13 +29,16 @@ map_data = {
 	3: {0: {filename: "", north: 0},
 		1: {filename: "", north: 0},
 		2: {filename: "", north: 0},
-		3: {filename: "", north: 0},
+		3: {filename: "3_1", north: 0},
 		4: {filename: "", north: 0},
 		5: {filename: "", north: 0},
-		6: {filename: "", north: 0}}
+		6: {filename: "", north: 0}},
+	4: {1: {filename: "4_1.svg", north: 0}},
+	8: {1: {filename: "8_1.svg", north: 0}},
+	10: {1: {filename: "10_1.svg", north: 0}}
 };
 
-icon_map = {
+icon_data = {
 	wf: { filename: 'drink-2.svg', color: ''},
 	wcm: { filename: 'men-restroom-sign.svg', color: ''},
 	wcf: { filename: 'women-restroom-sign.svg', color: ''},
@@ -44,10 +47,10 @@ icon_map = {
 	wcfa: { filename: 'women-restroom-sign.svg', color: ''},
 	wcua: { filename: 'toilets-sign.svg', color: ''},
 	elev: { filename: 'up-arrow-2.svg', color: ''},
-	stairs: { filename: 'toilets-sign.svg', color: ''},
-	ramp: { filename: 'toilets-sign.svg', color: ''},
+	stairs: { filename: 'ascending-stairs-signal.svg', color: ''},
+	ramp: { filename: 'arrows-1.svg', color: ''},
 	lift: { filename: 'elevator-with-a-occupant.svg', color: ''},
 	rdoor: { filename: 'toilets-sign.svg', color: ''},
 	door: { filename: 'direction.svg', color: ''},
-	adoor: { filename: 'toilets-sign.svg', color: ''},
+	adoor: { filename: 'toilets-sign.svg', color: ''}
 };
