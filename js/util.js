@@ -73,14 +73,10 @@ function loadMap(building, floor) {
 
     changeMap(building, floor);
 
-    console.log('here1');
-
     var data = map_data[building][floor];
     var resources = resource_data[building][floor];
     var type_of_resource = Object.keys(resources);
     var map = $('#map');
-
-    console.log('here2');
 
     var map_width = map.css('width');
     var map_height = map.css('height');
@@ -120,5 +116,5 @@ function loadMapEvent(event) {
 
     loadMapTranstion(building, floor);
 
-    $('#map').click(displayPostion);
+    $('#map').click(displayPosition);
 }
