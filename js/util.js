@@ -1,5 +1,5 @@
 
-function calcPostion (event) {
+function calcPosition (event) {
     var pageX = event.pageX;
     var pageY = event.pageY;
 
@@ -18,8 +18,8 @@ function calcPostion (event) {
     };
 }
 
-function displayPostion (event) {
-    pos = calcPostion(event);
+function displayPosition (event) {
+    pos = calcPosition(event);
 
     $('#x_pos').text(pos.x);
     $('#y_pos').text(pos.y);
@@ -49,6 +49,7 @@ function createResourceElem(resource) {
     var filename = icon_data[resource].filename;
 
     img.attr('src',  'resources/icons/svg/' + filename);
+    img.attr('data-toggle', 'modal');
     div.addClass('resource');
     img.addClass(resource);
     div.append(img);
