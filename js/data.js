@@ -65,7 +65,8 @@ map_data = {
 };
 
 map_adjacency = {
-	'7': []
+	'7|1|corridor|0': ['3|1|corridor|0'],
+	'3|1|corridor|0': ['7|1|corridor|0'],
 	// '7|0|elev|0': ['7|1|elev|1','7|1|elev|2','7|1|elev|3','7|1|elev|4','7|1|elev|5', '7|1|elev|6'],
 	// '7|0|elev|1': ['7|1|elev|0','7|1|elev|2','7|1|elev|3','7|1|elev|4','7|1|elev|5', '7|1|elev|6'],
 	// '7|0|elev|2': ['7|1|elev|1','7|1|elev|0','7|1|elev|3','7|1|elev|4','7|1|elev|5', '7|1|elev|6'],
