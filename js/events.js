@@ -1,9 +1,9 @@
 var a = 0;
 
 function get_amenity_object(bldg, floor, type, id) {
-	possibles = resource_data[bldg][floor][type];
+	possibles = resource_data[Number(bldg)][Number(floor)][type];
 	for(var i = 0; i < possibles.length; i++) {
-		if(possibles[i]["id"] === id) {
+		if(possibles[i]["id"] === Number(id)) {
 			return possibles[i];
 		}
 	}
@@ -19,7 +19,10 @@ function add_resource_handlers() {
         var id = target.attr("data-id");
         $("#icon-notes-title").html("Building " + bldg +", floor " + floor + ": <b>" + icon_data[type]["human_readable"] + "</b> (id = " + id + ")");
         var notes = get_amenity_object(bldg, floor, type, id);
-        if(notes === null || notes === "") {
+        if(notes !== null) {
+        	notes = notes.n;
+        }
+        if(notes === "" || notes === null) {
         	notes = "No available notes.";
         }
         $("#icon-notes-body").html(notes);
