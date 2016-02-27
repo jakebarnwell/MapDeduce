@@ -2,9 +2,13 @@
 // wf = water fountain, wcm = bathroom male, wcf = bathroom female,
 //  elev = elevators
 
-resource = {
+resource_data = {
 	7: {0: {stairs: [{x:0, y:0, n:""},{x:0, y:0, n:""}], elev: [{x:0, y:0, n:""}], ramp: [{x:0, y:0, n:""}], corridor: [{x:0, y:0, n:""},{x:0, y:0, n:""}]},
-		1: {ramp: [{x:0.308375, y:0.0211709886547812, n:""}], stairs:[{x:0.361375, y:0.35990680713128037, n:""},{x:0.356375, y:0.4725486223662885, n:""},{x:0.467375, y:0.47011750405186387, n:""},{x: 0.066375, y:0.7213330632090762, n: ""}], elev: [{x:0.346375, y:0.22538492706645058, n:""},{x:0.553375, y:0.5868111831442464, n:""}], wcm: [{x:0.713375, y:0.7432131280388979, n:""}], corridor: [{x:0.312375, y:0.9214951377633711, n:""},{x:0.986375, y:0.715660453808752, n:""}]},
+		1: {ramp: [{x:0.308375, y:0.0211709886547812, n:""}],
+			stairs:[{x:0.361375, y:0.35990680713128037, n:""},{x:0.356375, y:0.4725486223662885, n:""},{x:0.467375, y:0.47011750405186387, n:""},{x: 0.066375, y:0.7213330632090762, n: ""}],
+			elev: [{x:0.346375, y:0.22538492706645058, n:""},{x:0.553375, y:0.5868111831442464, n:""}],
+			wcm: [{x:0.713375, y:0.7432131280388979, n:""}],
+			corridor: [{x:0.312375, y:0.9214951377633711, n:""},{x:0.986375, y:0.715660453808752, n:""}]},
 		2: {elev: [{x:0, y:0, n:""}, {x:0, y:0, n:""}], stairs: [{x:0, y:0, n:""},{x:0, y:0, n:""},{x:0, y:0, n:""}], wcm: [{x:0, y:0, n:""}], corridor: [{x:0, y:0, n:""},{x:0, y:0, n:""}]},
 		3: {elev: [{x:0, y:0, n:""}], stairs: [{x:0, y:0, n:""},{x:0, y:0, n:""}], corridor: [{x:0, y:0, n:""},{x:0, y:0, n:""},{x:0, y:0, n:""}]},
 		4: {stairs: [{x:0, y:0, n:""}], elev: [{x:0, y:0, n:""}], corridor: [{x:0, y:0, n:""},{x:0, y:0, n:""},{x:0, y:0, n:""}]},
@@ -47,10 +51,11 @@ icon_data = {
 	wcfa: { filename: 'women-restroom-sign.svg'},
 	wcua: { filename: 'toilets-sign.svg'},
 	elev: { filename: 'up-arrow-2.svg'},
-	stairs: { filename: 'ascending-stairs-signal.svg'},
+	stairs: { filename: 'healthy.svg'},
 	ramp: { filename: 'arrows-1.svg'},
 	lift: { filename: 'elevator-with-a-occupant.svg'},
 	rdoor: { filename: 'toilets-sign.svg'},
 	door: { filename: 'opened-door-aperture.svg'},
-	adoor: { filename: 'toilets-sign.svg'}
+	adoor: { filename: 'toilets-sign.svg'},
+	corridor: { filename: 'connection.svg'},
 };

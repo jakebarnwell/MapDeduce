@@ -6,6 +6,5 @@
 // });
 
 $(function () {
-    $('#map').click(displayPostion);
     $('#change_button').click(loadMapEvent);
 });

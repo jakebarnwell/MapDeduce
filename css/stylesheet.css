@@ -1,4 +1,13 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+}
+
 #map-container {
+    position: relative;
     width: 75%;
     margin: 1em auto;
     padding: 0;
@@ -8,30 +17,30 @@
     width: 100%;
 }
 
-/*aqua	#00ffff
-black	#000000
-blue	#0000ff
-fuchsia	#ff00ff
-gray	#808080
-green	#008000
-lime	#00ff00
-maroon	#800000
-navy	#000080
-olive	#808000
-orange (added in CSS 2.1)	#ffa500
-purple	#800080
-red	#ff0000
-silver	#c0c0c0
-teal	#008080
-white	#ffffff
-yellow	#ffff00*/
-
-
-.resource img {
-    width: 50px;
+#resource-container {
+    width: 100%;
 }
 
-.wf, .corr {
+.resource {
+    position: absolute;
+    width: 5%;
+    opacity: .75;
+    cursor: pointer;
+}
+
+.resource:hover {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+
+.resource img {
+    position: relative;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+}
+
+.wf, .corridor {
     background-color: cyan;
 }
 
