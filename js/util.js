@@ -77,6 +77,7 @@ function showMap () {
 function loadMap(building, floor) {
     $('#map-container').empty();
 
+    $("#bldg-floor-header").text("Building " + building + ", Floor " + floor)
     changeMap(building, floor);
 
     var data = map_data[building][floor];
