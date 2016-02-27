@@ -1,49 +1,61 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 358.692 358.692" style="enable-background:new 0 0 358.692 358.692;" xml:space="preserve">
-<g>
-	<path d="M340.998,111.326h-46.514c-7.168,0-13,5.831-13,13v27.553h-38.468c-7.168,0-13,5.832-13,13v26.207h-38.467
-		c-7.168,0-13,5.831-13,13v26.207h-38.468c-7.169,0-13,5.832-13,13.001V269.5H88.614c-7.168,0-13,5.832-13,13v26.207H38.916
-		c-7.168,0-13,5.832-13,13v23.985c0,7.168,5.832,13,13,13H85.43c0.54,0,1.069-0.043,1.592-0.108
-		c0.523,0.064,1.052,0.108,1.592,0.108h46.514c0.848,0,1.674-0.088,2.477-0.243c0.803,0.156,1.629,0.243,2.477,0.243h46.514
-		c0.848,0,1.674-0.088,2.477-0.243c0.803,0.156,1.629,0.243,2.477,0.243h46.514c0.847,0,1.674-0.088,2.477-0.243
-		c0.803,0.156,1.629,0.243,2.477,0.243h46.514c0.847,0,1.674-0.088,2.477-0.243c0.803,0.156,1.629,0.243,2.477,0.243h46.514
-		c7.168,0,13-5.831,13-13V124.326C353.998,117.157,348.166,111.326,340.998,111.326z"/>
-	<path d="M47.713,274.096c0,3.866,3.134,7,7,7s7-3.134,7-7v-64.653l87.584-66.53v52.38c0,3.866,3.134,7,7,7c3.866,0,7-3.134,7-7
-		v-63.014l86.571-65.76v50.36c0,3.866,3.134,7,7,7c3.866,0,7-3.134,7-7V55.884l49.921-37.92c4.398-3.34,5.255-9.614,1.914-14.012
-		c-3.341-4.399-9.615-5.254-14.012-1.915L8.646,224.638c-4.398,3.34-5.255,9.614-1.914,14.012c1.967,2.59,4.951,3.952,7.97,3.952
-		c2.108,0,4.233-0.664,6.042-2.037l26.97-20.487V274.096z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 358.692 358.692"
+   style="enable-background:new 0 0 358.692 358.692;"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="healthy.svg"><metadata
+     id="metadata43"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs41" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview39"
+     showgrid="false"
+     inkscape:zoom="0.65794612"
+     inkscape:cx="179.34599"
+     inkscape:cy="179.34599"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Capa_1" /><path
+     inkscape:connector-curvature="0"
+     id="path5"
+     d="m 340.998,111.326 -46.514,0 c -7.168,0 -13,5.831 -13,13 l 0,27.553 -38.468,0 c -7.168,0 -13,5.832 -13,13 l 0,26.207 -38.467,0 c -7.168,0 -13,5.831 -13,13 l 0,26.207 -38.468,0 c -7.169,0 -13,5.832 -13,13.001 l 0,26.206 -38.467,0 c -7.168,0 -13,5.832 -13,13 l 0,26.207 -36.698,0 c -7.168,0 -13,5.832 -13,13 l 0,23.985 c 0,7.168 5.832,13 13,13 l 46.514,0 c 0.54,0 1.069,-0.043 1.592,-0.108 0.523,0.064 1.052,0.108 1.592,0.108 l 46.514,0 c 0.848,0 1.674,-0.088 2.477,-0.243 0.803,0.156 1.629,0.243 2.477,0.243 l 46.514,0 c 0.848,0 1.674,-0.088 2.477,-0.243 0.803,0.156 1.629,0.243 2.477,0.243 l 46.514,0 c 0.847,0 1.674,-0.088 2.477,-0.243 0.803,0.156 1.629,0.243 2.477,0.243 l 46.514,0 c 0.847,0 1.674,-0.088 2.477,-0.243 0.803,0.156 1.629,0.243 2.477,0.243 l 46.514,0 c 7.168,0 13,-5.831 13,-13 l 0,-221.366 c -0.002,-7.169 -5.834,-13 -13.002,-13 z" /><g
+     id="g9" /><g
+     id="g11" /><g
+     id="g13" /><g
+     id="g15" /><g
+     id="g17" /><g
+     id="g19" /><g
+     id="g21" /><g
+     id="g23" /><g
+     id="g25" /><g
+     id="g27" /><g
+     id="g29" /><g
+     id="g31" /><g
+     id="g33" /><g
+     id="g35" /><g
+     id="g37" /></svg>
