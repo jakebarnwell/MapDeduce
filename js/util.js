@@ -1,3 +1,5 @@
+var currentFloor = 1;
+var currentBldg = 7;
 
 function calcPosition (event) {
     var pageX = event.pageX;
@@ -112,6 +114,8 @@ function loadMap(building, floor) {
 }
 
 function loadMapTransition(building, floor) {
+    currentFloor = floor;
+    currentBldg = building;
     hideMap(function () {
         loadMap(building, floor);
         showMap();
