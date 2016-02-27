@@ -111,7 +111,7 @@ function loadMap(building, floor) {
     add_resource_handlers();
 }
 
-function loadMapTranstion(building, floor) {
+function loadMapTransition(building, floor) {
     hideMap(function () {
         loadMap(building, floor);
         showMap();
@@ -122,7 +122,7 @@ function loadMapTranstion(building, floor) {
 function inputToBuilding(user_input) {
     var building, floor;
     var re = /[NnSs]?[WwEe]?\d{1,2}-[DdGg]?\d{3}/;
-    if ((user_input).search(re) != -1) {
+    if (user_input.search(re) != -1) {
         var bldg_rm = user_input.split('-');
         building = bldg_rm[0];
         var room_re = /d{3}/;
@@ -144,5 +144,5 @@ function loadMapEvent(event) {
     var bldg_flr = inputToBuilding(map_id);
     var building = bldg_flr[0];
     var floor = bldg_flr[1];
-    loadMapTranstion(building, floor);
+    loadMapTransition(building, floor);
 }
