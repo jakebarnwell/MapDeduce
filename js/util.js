@@ -56,29 +56,31 @@ function createResourceElem(resource) {
     return div;
 }
 
-// function createResourceContainer() {
-//     var div = $('<div>');
-//     var map_container = $('#map-container');
-//     var map = $('#map');
-//
-//     // div.css('width', map.css('width'));
-//     // div.css('height', map.css('height'));
-//
-//     div.attr('id', 'resource-container');
-//
-//     map_container.append(div);
-// }
+function hideMap(callback) {
+    $('#map-container').animate({
+        'opacity': 0
+    }, 250, 'swing', callback);
+}
+
+function showMap () {
+    $('#map-container').animate({
+        'opacity': 1
+    }, 250, 'swing');
+}
 
 function loadMap(building, floor) {
     $('#map-container').empty();
 
     changeMap(building, floor);
-    // createResourceContainer();
+
+    console.log('here1');
 
     var data = map_data[building][floor];
     var resources = resource_data[building][floor];
     var type_of_resource = Object.keys(resources);
     var map = $('#map');
+
+    console.log('here2');
 
     var map_width = map.css('width');
     var map_height = map.css('height');
@@ -103,13 +105,20 @@ function loadMap(building, floor) {
     }
 }
 
+function loadMapTranstion(building, floor) {
+    hideMap(function () {
+        loadMap(building, floor);
+        showMap();
+    });
+}
+
 function loadMapEvent(event) {
     var map_id = $('#floor_input').val();
     var bldg_flr = map_id.split('_');
     var building = bldg_flr[0];
     var floor = bldg_flr[1];
 
-    loadMap(building, floor);
+    loadMapTranstion(building, floor);
 
     $('#map').click(displayPostion);
 }
