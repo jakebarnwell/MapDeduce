@@ -3,15 +3,26 @@
 	<head>
 		<title>MapDeduce</title>
 
-        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="js/util.js"></script>
 	</head>
 
 	<body>
         <h1>MapDeduce</h1>
 
-        <div id="main">
-            
+        <div id="dev">
+            <input id="floor_input"></input><button id="change_button">Change</button>
+            <br>
+            <strong>X:</strong> <span id="x_pos"></span>,
+            <strong>Y:</strong> <span id="y_pos"></span>
+        </div>
+
+        <div id="map-container">
+            <img id="map" src="resources/img/10_1.svg">
         </div>
 	</body>
 </html>
