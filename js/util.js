@@ -53,8 +53,10 @@ function createResourceElem(resource, building, floor, id) {
     img.attr("data-bldg", building);
     img.attr("data-floor", floor);
     img.attr("data-id", id);
+    img.attr("data-type", resource);
     div.addClass('resource');
     img.addClass(resource);
+    img.addClass("resource-img");
     div.append(img);
 
     return div;
