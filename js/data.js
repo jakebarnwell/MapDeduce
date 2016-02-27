@@ -20,7 +20,7 @@ resource = {
 
 map_data = {
 	7: {0: {filename: "", north: 0},
-		1: {filename: "", north: 0},
+		1: {filename: "7_1.svg", north: 0},
 		2: {filename: "", north: 0},
 		3: {filename: "", north: 0},
 		4: {filename: "", north: 0},
@@ -29,10 +29,13 @@ map_data = {
 	3: {0: {filename: "", north: 0},
 		1: {filename: "", north: 0},
 		2: {filename: "", north: 0},
-		3: {filename: "", north: 0},
+		3: {filename: "3_1", north: 0},
 		4: {filename: "", north: 0},
 		5: {filename: "", north: 0},
-		6: {filename: "", north: 0}}
+		6: {filename: "", north: 0}},
+	4: {1: {filename: "4_1.svg", north: 0}},
+	8: {1: {filename: "8_1.svg", north: 0}},
+	10: {1: {filename: "10_1.svg", north: 0}}
 };
 
 icon_data = {
