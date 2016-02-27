@@ -1,6 +1,6 @@
 
 // wf = water fountain, wcm = bathroom male, wcf = bathroom female,
-//  
+//
 resource = {
 	7: {0: {wf: [{}], wcf: [], wcm: []},
 		1: {restroom_men: []},
@@ -33,3 +33,13 @@ map_data = {
 		5: {filename: ""},
 		6: {filename: ""}}
 }
+
+icon_map = {
+	wf: {
+		filename: 'drink-2.svg',
+		color: ''
+	},
+	wcm : {
+
+	}
+};
