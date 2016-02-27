@@ -6,6 +6,6 @@
 // });
 
 $(function () {
-    loadMapTranstion(7, 1);
+    loadMapTransition(7, 1);
     $('#change_button').click(loadMapEvent);
 });
