@@ -1,5 +1,5 @@
 
-function calcPostion (event) {
+function calcPosition (event) {
     var pageX = event.pageX;
     var pageY = event.pageY;
 
@@ -18,8 +18,8 @@ function calcPostion (event) {
     };
 }
 
-function displayPostion (event) {
-    pos = calcPostion(event);
+function displayPosition (event) {
+    pos = calcPosition(event);
 
     $('#x_pos').text(pos.x);
     $('#y_pos').text(pos.y);
@@ -111,5 +111,5 @@ function loadMapEvent(event) {
 
     loadMap(building, floor);
 
-    $('#map').click(displayPostion);
+    $('#map').click(displayPosition);
 }
