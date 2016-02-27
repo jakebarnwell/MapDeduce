@@ -43,13 +43,16 @@ function changeMapEvent(event) {
     changeMap(building, floor);
 }
 
-function createResourceElem(resource) {
+function createResourceElem(resource, building, floor, id) {
     var div = $('<div>');
     var img = $('<img>');
     var filename = icon_data[resource].filename;
 
     img.attr('src',  'resources/icons/svg/' + filename);
     img.attr('data-toggle', 'modal');
+    img.attr("data-bldg", building);
+    img.attr("data-floor", floor);
+    img.attr("data-id", id);
     div.addClass('resource');
     img.addClass(resource);
     div.append(img);
@@ -91,7 +94,7 @@ function loadMap(building, floor) {
 
         for (var i in resource_list) {
             var resource_obj = resource_list[i];
-            var elem = createResourceElem(resource);
+            var elem = createResourceElem(resource, building, floor, resource_obj.id);
             $('#map-container').append(elem);
 
             var elem_width = elem.css('width');
@@ -102,6 +105,9 @@ function loadMap(building, floor) {
             elem.css('top', resource_obj.y*100 + '%');
         }
     }
+
+    // must place here because can only put handlers on existing entities
+    add_resource_handlers();
 }
 
 function loadMapEvent(event) {
