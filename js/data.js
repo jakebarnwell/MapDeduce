@@ -45,16 +45,16 @@ resource_data = {
 };
 
 map_data = {
-	7: {0: {filename: "", north: 0},
+	7: {0: {filename: "7_0.svg", north: 0},
 		1: {filename: "7_1.svg", north: 0},
-		2: {filename: "", north: 0},
+		2: {filename: "7_2.svg", north: 0},
 		3: {filename: "", north: 0},
 		4: {filename: "", north: 0},
 		5: {filename: "", north: 0},
 		6: {filename: "", north: 0}},
-	3: {0: {filename: "", north: 0},
+	3: {0: {filename: "3_0.svg", north: 0},
 		1: {filename: "3_1.svg", north: 0},
-		2: {filename: "", north: 0},
+		2: {filename: "3_2.svg", north: 0},
 		3: {filename: "", north: 0},
 		4: {filename: "", north: 0},
 		5: {filename: "", north: 0},
