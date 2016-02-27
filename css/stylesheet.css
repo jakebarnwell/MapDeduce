@@ -25,19 +25,19 @@ h1 {
 .resource {
     position: absolute;
     width: 50px;
-    opacity: .75;
-    cursor: pointer;
-    transition: opacity 0.25s ease;
-}
-
-.resource:hover {
-    opacity: 1;
 }
 
 .resource img {
     position: relative;
+    cursor: pointer;
     top: -50%;
     left: -50%;
+    opacity: .75;
+    transition: opacity 0.25s ease;
+}
+
+.resource img:hover {
+    opacity: 1;
 }
 
 .wf, .corridor {
