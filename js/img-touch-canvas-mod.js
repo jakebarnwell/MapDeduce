@@ -11,54 +11,6 @@ This code may be freely distributed under the MIT License
 
 
 (function() {
-    var zoomReally = function(zoom, obj) {
-        if(!zoom) return;
-
-        //new scale
-        var currentScale = obj.scale.x;
-        var newScale = obj.scale.x + zoom/100;
-        
-
-        //some helpers
-        var deltaScale = newScale - currentScale;
-        var currentWidth    = (obj.imgTexture.width * obj.scale.x);
-        var currentHeight   = (obj.imgTexture.height * obj.scale.y);
-        var deltaWidth  = obj.imgTexture.width*deltaScale;
-        var deltaHeight = obj.imgTexture.height*deltaScale;
-
-
-        //by default scale doesnt change position and only add/remove pixel to right and bottom
-        //so we must move the image to the left to keep the image centered
-        //ex: coefX and coefY = 0.5 when image is centered <=> move image to the left 0.5x pixels added to the right
-        var canvasmiddleX = obj.canvas.clientWidth / 2;
-        var canvasmiddleY = obj.canvas.clientHeight / 2;
-        var xonmap = (-obj.position.x) + canvasmiddleX;
-        var yonmap = (-obj.position.y) + canvasmiddleY;
-        var coefX = -xonmap / (currentWidth);
-        var coefY = -yonmap / (currentHeight);
-        var newPosX = obj.position.x + deltaWidth*coefX;
-        var newPosY = obj.position.y + deltaHeight*coefY;
-
-        //edges cases
-        var newWidth = currentWidth + deltaWidth;
-        var newHeight = currentHeight + deltaHeight;
-        
-        if( newWidth < obj.canvas.clientWidth ) return;
-        if( newPosX > 0 ) { newPosX = 0; }
-        if( newPosX + newWidth < obj.canvas.clientWidth ) { newPosX = obj.canvas.clientWidth - newWidth;}
-        
-        if( newHeight < obj.canvas.clientHeight ) return;
-        if( newPosY > 0 ) { newPosY = 0; }
-        if( newPosY + newHeight < obj.canvas.clientHeight ) { newPosY = obj.canvas.clientHeight - newHeight; }
-
-
-        //finally affectations
-        obj.scale.x    = newScale;
-        obj.scale.y    = newScale;
-        obj.position.x = newPosX;
-        obj.position.y = newPosY;
-    }
-
     var root = this; //global object
 
     var ImgTouchCanvas = function(options) {
@@ -241,7 +193,6 @@ This code may be freely distributed under the MIT License
                 this.lastZoomScale  = null;
             }.bind(this));
 
-            console.log(this);
             this.canvas.addEventListener('touchmove', function(e) {
                 e.preventDefault();
                 
@@ -258,7 +209,6 @@ This code may be freely distributed under the MIT License
             if(this.desktop) {
                 // keyboard+mouse
                 window.addEventListener('keyup', function(e) {
-                    // console.log(e.keyCode);
                     if(e.keyCode == 187 || e.keyCode == 61) { //+
                         this.doZoom(5);console.log(this);
                     }
@@ -291,9 +241,9 @@ This code may be freely distributed under the MIT License
                 }.bind(this));
 
                 window.addEventListener("wheel", function(e) {
-                    console.log(this);
-                    this.doZoom(5); 
-                });
+                    e.preventDefault();
+                    this.doZoom(e.wheelDeltaY / 10); 
+                }.bind(this));
             }
         },
 
