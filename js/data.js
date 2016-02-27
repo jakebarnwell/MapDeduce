@@ -36,11 +36,18 @@ map_data = {
 };
 
 icon_map = {
-	wf: {
-		filename: 'drink-2.svg',
-		color: ''
-	},
-	wcm : {
-
-	}
+	wf: { filename: 'drink-2.svg', color: ''},
+	wcm: { filename: 'men-restroom-sign.svg', color: ''},
+	wcf: { filename: 'women-restroom-sign.svg', color: ''},
+	wcu: { filename: 'toilets-sign.svg', color: ''},
+	wcma: { filename: 'men-restroom-sign.svg', color: ''},
+	wcfa: { filename: 'women-restroom-sign.svg', color: ''},
+	wcua: { filename: 'toilets-sign.svg', color: ''},
+	elev: { filename: 'up-arrow-2.svg', color: ''},
+	stairs: { filename: 'toilets-sign.svg', color: ''},
+	ramp: { filename: 'toilets-sign.svg', color: ''},
+	lift: { filename: 'elevator-with-a-occupant.svg', color: ''},
+	rdoor: { filename: 'toilets-sign.svg', color: ''},
+	door: { filename: 'direction.svg', color: ''},
+	adoor: { filename: 'toilets-sign.svg', color: ''},
 };
