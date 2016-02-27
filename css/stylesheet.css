@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -26,16 +27,15 @@ h1 {
     width: 50px;
     opacity: .75;
     cursor: pointer;
+    transition: opacity 0.25s ease;
 }
 
 .resource:hover {
     opacity: 1;
-    transition: opacity 0.25s ease;
 }
 
 .resource img {
     position: relative;
-    border-radius: 50%;
     top: -50%;
     left: -50%;
 }
