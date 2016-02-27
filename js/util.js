@@ -25,15 +25,40 @@ function displayPostion (event) {
     $('#y_pos').text(pos.y);
 }
 
-function changeMap(event) {
-    var map_id = $('#floor_input').val();
-    var src = 'resources/img/' + map_id + '.svg';
-
+function changeMap(building, floor) {
+    var src = 'resources/img/' +map_data[building][floor].filename + '.svg';
     $('#map').attr('src', src);
 }
 
+function changeMapEvent(event) {
+    var map_id = $('#floor_input').val();
+    var bldg_flr = map_id.split('_');
+    var building = bldg_flr[0];
+    var floor = bldg_flr[1];
 
-$(function () {
-    $('#map').click(displayPostion);
-    $('#change_button').click(changeMap);
-});
+    changeMap(building, floor);
+}
+
+function createIconElem(resource, info) {
+    var div = $('<div>');
+    var img = $('<img>');
+    var filename = icon_data[resource].filename;
+    var color = icon_data[resource].color;
+
+    div.addClass('resource');
+    // div.css('background-color', color);
+    // img.attr('src',  'resources/icons/svg/' + filename);
+}
+
+function loadMap(building, floor) {
+    var data = map_data[building][floor];
+    var resources = resource[building][floor];
+    var type_of_resource = Object.keys(resources);
+
+    changeMap(building, floor);
+
+    for (var resource in resources) {
+        var info = resources[resources];
+        var elem = createIconElem(resource);
+    }
+}

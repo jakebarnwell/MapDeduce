@@ -39,7 +39,7 @@ icon_data = {
 	wf: { filename: 'drink-2.svg', color: ''},
 	wcm: { filename: 'men-restroom-sign.svg', color: ''},
 	wcf: { filename: 'women-restroom-sign.svg', color: ''},
-	wcu: { filename: 'toilets-sign.svg', color: ''},
+	wcu: { filename: 'black.svg', color: ''},
 	wcma: { filename: 'men-restroom-sign.svg', color: ''},
 	wcfa: { filename: 'women-restroom-sign.svg', color: ''},
 	wcua: { filename: 'toilets-sign.svg', color: ''},
@@ -48,6 +48,6 @@ icon_data = {
 	ramp: { filename: 'arrows-1.svg', color: ''},
 	lift: { filename: 'elevator-with-a-occupant.svg', color: ''},
 	rdoor: { filename: 'toilets-sign.svg', color: ''},
-	door: { filename: 'direction.svg', color: ''},
+	door: { filename: 'opened-door-aperture.svg', color: ''},
 	adoor: { filename: 'toilets-sign.svg', color: ''}
 };
