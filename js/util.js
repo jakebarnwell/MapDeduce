@@ -43,13 +43,16 @@ function changeMapEvent(event) {
     changeMap(building, floor);
 }
 
-function createResourceElem(resource) {
+function createResourceElem(resource, building, floor, id) {
     var div = $('<div>');
     var img = $('<img>');
     var filename = icon_data[resource].filename;
 
     img.attr('src',  'resources/icons/svg/' + filename);
     img.attr('data-toggle', 'modal');
+    img.attr("data-bldg", building);
+    img.attr("data-floor", floor);
+    img.attr("data-id", id);
     div.addClass('resource');
     img.addClass(resource);
     div.append(img);
@@ -57,24 +60,22 @@ function createResourceElem(resource) {
     return div;
 }
 
-// function createResourceContainer() {
-//     var div = $('<div>');
-//     var map_container = $('#map-container');
-//     var map = $('#map');
-//
-//     // div.css('width', map.css('width'));
-//     // div.css('height', map.css('height'));
-//
-//     div.attr('id', 'resource-container');
-//
-//     map_container.append(div);
-// }
+function hideMap(callback) {
+    $('#map-container').animate({
+        'opacity': 0
+    }, 250, 'swing', callback);
+}
+
+function showMap () {
+    $('#map-container').animate({
+        'opacity': 1
+    }, 250, 'swing');
+}
 
 function loadMap(building, floor) {
     $('#map-container').empty();
 
     changeMap(building, floor);
-    // createResourceContainer();
 
     var data = map_data[building][floor];
     var resources = resource_data[building][floor];
@@ -91,7 +92,7 @@ function loadMap(building, floor) {
 
         for (var i in resource_list) {
             var resource_obj = resource_list[i];
-            var elem = createResourceElem(resource);
+            var elem = createResourceElem(resource, building, floor, resource_obj.id);
             $('#map-container').append(elem);
 
             var elem_width = elem.css('width');
@@ -102,6 +103,17 @@ function loadMap(building, floor) {
             elem.css('top', resource_obj.y*100 + '%');
         }
     }
+
+    // must place here because can only put handlers on existing entities
+    add_resource_handlers();
+}
+
+function loadMapTranstion(building, floor) {
+    hideMap(function () {
+        loadMap(building, floor);
+        showMap();
+        $('#map').click(displayPosition); // remove after dev
+    });
 }
 
 function loadMapEvent(event) {
@@ -110,7 +122,5 @@ function loadMapEvent(event) {
     var building = bldg_flr[0];
     var floor = bldg_flr[1];
 
-    loadMap(building, floor);
-
-    $('#map').click(displayPosition);
+    loadMapTranstion(building, floor);
 }
