@@ -77,6 +77,9 @@ function showMap () {
 }
 
 function loadMap(building, floor) {
+    currentFloor = floor;
+    currentBldg = building;
+
     $('#map-container').empty();
 
     $("#bldg-floor-header").text("Building " + building + ", Floor " + floor)
@@ -114,8 +117,6 @@ function loadMap(building, floor) {
 }
 
 function loadMapTransition(building, floor) {
-    currentFloor = floor;
-    currentBldg = building;
     hideMap(function () {
         loadMap(building, floor);
         showMap();

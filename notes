@@ -1,0 +1,4 @@
+NOTES for future
+
+minimap in corner so you can see where youa re in the grand scheme of things
+error handling for the search box (right now it crashes full app if we have a bad search), also for floros in general e.g. trying to go to floor -1
