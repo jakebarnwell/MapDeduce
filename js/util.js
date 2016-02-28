@@ -79,7 +79,7 @@ function showMap () {
 function loadMap(building, floor) {
     currentFloor = floor;
     currentBldg = building;
-    
+
     $('#map-container').empty();
 
     $("#bldg-floor-header").text("Building " + building + ", Floor " + floor)

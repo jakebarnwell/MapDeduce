@@ -8,9 +8,9 @@ $(function () {
  		}
     });
     $("#up-button").click(function() {
-    	loadMapTransition(currentBldg, currentFloor+1);
+    	loadMapTransition(currentBldg, Number(currentFloor)+1);
     });
     $("#down-button").click(function() {
-    	loadMapTransition(currentBldg, currentFloor-1);
+    	loadMapTransition(currentBldg, Number(currentFloor)-1);
     });
 });

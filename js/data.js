@@ -42,6 +42,8 @@ resource_data = {
 		1: {}},
 	10: {0: {},
 	     1: {}},
+	master: {0: {},
+			 1: {}},
 };
 
 map_data = {
@@ -61,7 +63,8 @@ map_data = {
 		6: {filename: "", north: 0}},
 	4: {1: {filename: "4_1.svg", north: 0}},
 	8: {1: {filename: "8_1.svg", north: 0}},
-	10: {1: {filename: "10_1.svg", north: 0}}
+	10: {1: {filename: "10_1.svg", north: 0}},
+	master: {1: {filename: "master_1.svg"}}
 };
 
 map_adjacency = {
